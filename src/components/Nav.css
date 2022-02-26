@@ -1,0 +1,30 @@
+.Nav {
+  position: fixed;
+  width: 100%;
+  padding: 50px 0 20px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.nav__black {
+  background-color: #141414;
+  padding-top: 20px;
+  /* NETFLIX RED: E50914 */
+}
+
+.nav__contents {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 700px) {
+  .nav__contents {
+    margin: 0 70px;
+  }
+}
+
+.nav__logo {
+  cursor: pointer;
+}
