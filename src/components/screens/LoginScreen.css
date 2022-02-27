@@ -1,0 +1,80 @@
+.login {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://img.wallpapersafari.com/desktop/1920/1080/24/74/zgeTuV.jpg")
+      no-repeat top center;
+}
+
+.login__contents {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__title {
+  font-size: 3.7rem;
+  font-weight: bold;
+  line-height: 110%;
+  margin-bottom: 0.6rem;
+}
+.login__subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.login__cta {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.login__input {
+  padding: 1rem;
+}
+.login__input :is(input, button) {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  outline: none;
+}
+.login__input input {
+  width: 550px;
+}
+.login__input input:focus,
+.login__input input:active {
+  outline: none;
+}
+.login__input input::placeholder {
+  opacity: 0.7;
+}
+.login__input button {
+  border: none;
+  background-color: #e50914;
+  transition: all 0.2s;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.9rem;
+}
+.login__input button:hover {
+  background-color: #141414;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .login__input input {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 9px;
+  }
+}

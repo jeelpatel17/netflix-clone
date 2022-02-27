@@ -1,12 +1,12 @@
-import Nav from "./Nav";
-import Banner from "./Banner";
-import requests from "../Requests";
-import Row from "./Row";
+import Nav from "../Nav";
+import Banner from "../Banner";
+import requests from "../../Requests";
+import Row from "../Row";
 
 export default function HomeScreen() {
   return (
     <div>
-      <Nav />
+      <Nav login={true} />
       <Banner />
       <Row
         title={"NETFLIX ORIGINALS"}

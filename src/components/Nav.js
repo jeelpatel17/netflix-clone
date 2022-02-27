@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Nav.css";
 
-export default function Nav() {
+export default function Nav(props) {
   const [show, handleShow] = useState(false);
   const transitionNavbar = () => {
     if (window.scrollY > 100) handleShow(true);
@@ -9,7 +9,6 @@ export default function Nav() {
   };
   useEffect(() => {
     window.addEventListener("scroll", transitionNavbar);
-    // window.removeEventListener("scroll", transitionNavbar);
   }, []);
   return (
     <nav className={`Nav ${show && "nav__black"}`}>
@@ -20,12 +19,18 @@ export default function Nav() {
           width={"150px"}
           alt="netflix-logo"
         />
-        <img
-          className="nav__avatar"
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-          alt="profile-avatar"
-          width={"50px"}
-        />
+        {props.loggedIn ? (
+          <img
+            className="nav__avatar"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            alt="profile-avatar"
+            width={"50px"}
+          />
+        ) : (
+          <button onClick={props.btnOnClick} className="nav__button">
+            Sign In
+          </button>
+        )}
       </ul>
     </nav>
   );
