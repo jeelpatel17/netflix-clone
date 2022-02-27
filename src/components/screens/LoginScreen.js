@@ -7,7 +7,6 @@ export default function Login() {
   const [letsSignIn, setLetsSignIn] = useState(false);
   function signIn() {
     setLetsSignIn(true);
-    alert("signed in!");
   }
   function handleChange() {
     signIn();
