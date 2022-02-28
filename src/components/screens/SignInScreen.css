@@ -1,15 +1,15 @@
-.signUp {
+.signInOriginal {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.signUp .Nav {
+.signInOriginal .Nav {
   top: 0;
 }
 
-.signUp__form {
+.signInOriginal__form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -19,7 +19,7 @@
   padding: 2rem;
 }
 
-.signUp__form input {
+.signInOriginal__form input {
   border-radius: 4px;
   font-size: 1.3rem;
   padding: 0.8rem;
@@ -29,12 +29,12 @@
   border: none;
   color: #fff;
 }
-.signUp__form input:active,
-.signUp__form input:focus {
+.signInOriginal__form input:active,
+.signInOriginal__form input:focus {
   outline: none;
 }
 
-.signUp__form button {
+.signInOriginal__form button {
   outline: none;
   border-radius: 4px;
   border: none;
@@ -46,18 +46,18 @@
   cursor: pointer;
 }
 
-.signUp__form button:hover {
+.signInOriginal__form button:hover {
   background-color: rgba(51, 51, 51, 0.5);
   transition: all 0.2s;
 }
 
-.signUp__form > h4 {
+.signInOriginal__form > h4 {
   color: gray;
 }
-.signUp__form > h4 > span {
+.signInOriginal__form > h4 > span {
   color: #fff;
 }
-.signUp__form > h4 > span:hover {
+.signInOriginal__form > h4 > span:hover {
   cursor: pointer;
   text-decoration: underline;
 }
